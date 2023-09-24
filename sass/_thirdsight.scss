@@ -1,0 +1,150 @@
+@import './variables';
+
+.page__thirdsight {
+    height: 100%;
+    width: 100%;
+    padding: 0px 200px;
+    background: $primary-bg;
+
+
+    @media (max-width:1500px){
+        padding:0px 42px ;
+    }
+
+
+    @media (max-width:350px){
+        padding: 0px 20px;
+      }
+      
+      
+  
+    &--container{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 80px;
+    }
+  
+    &__titles{
+      padding: 80px 50px 120px 50px;
+      padding-top: 0px;
+      letter-spacing: .2px;
+
+
+      @media (max-width:350px){
+        padding: 10px 20px;
+        padding-bottom: 30px;
+      }
+  
+      h2{
+          color: #252B42;
+          font-weight: 700;
+          font-size: 40px;
+          text-align: center;
+          padding-bottom: 20px;
+
+
+
+                  
+    @media (max-width:320px){
+        font-size: 30px;
+      
+     }
+      }
+  
+      p{
+          font-weight: 500;
+          font-size: 14px;
+          text-align: center;
+          color: #737373;
+          line-height: 20px;
+      }
+    }
+
+    &__contents{
+        display: flex;
+        gap: 15px;
+
+        @media (max-width:950px){
+           flex-direction: column;
+           gap: 20px;
+           
+          }
+  
+       
+        
+
+
+        &__items{
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+          
+           transition: all .5s ease;
+
+
+           img{
+            width: 100%;
+           }
+
+           @media (max-width:1500px){
+            margin-right:20px ;
+
+
+
+            
+        }
+
+
+       
+
+
+
+
+
+           
+
+            &:hover{
+                background: rgb(193, 119, 34);
+                transform: scale(1.05);
+                border-radius: 2px;
+               
+                
+
+                p{
+                    color: #ffffff;
+                }
+                h5{
+                    color: black;
+                }
+            }
+
+            &--titles{
+                padding: 20px;
+
+                h5{
+                    font-weight: 700;
+                    letter-spacing: .1px;
+                    font-size: 16px;
+                    color: #252B42;
+                    padding-bottom: 5px;
+                    transition: all .5s ease;
+                }
+
+                p{
+                    color: #737373;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: .2px;
+                    line-height: 20px;
+                    transition: all .5s ease;
+                }
+            }
+        }
+    }
+  
+   
+  }
+  

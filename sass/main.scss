@@ -1,0 +1,173 @@
+@import './navbar';
+@import './home';
+@import './secondsight';
+@import './thirdsight';
+@import './fourthsight';
+@import './fifthsight';
+@import './sixthsight';
+@import './sevethsight';
+@import './variables';
+
+//universal
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Croissant+One&family=Lora:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,100;1,200&family=Roboto&family=Ruwudu:wght@700&family=Sedgwick+Ave+Display&family=Sora:wght@100&display=swap');*{
+ 
+ *   {   padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+//menueffectmobile--beforechane
+
+
+
+
+//menueffectmobile--afterchange
+
+
+
+
+
+
+
+.home__lists--show{
+    display: none;
+
+
+    @media (max-width:640px){
+       
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #737373;
+    background: transparent;
+    gap: 30px;
+    padding: 50px;
+ 
+
+    li{
+     list-style: none;
+     a{
+         text-decoration: none;
+         color: #737373;
+         font-weight: 400;
+         font-size: 25px;
+         transition: all .5s ease-in-out;
+
+
+         &:hover{
+             transform: scale(1.2);
+             color: blue;
+             
+      
+     }
+    }
+
+
+
+   }
+
+
+}
+}
+
+
+}
+
+
+
+
+#menu{
+    height: 100%;
+    width: 100%;
+   
+
+    a{
+        display: flex;
+        flex-direction: column;
+       
+        gap: 3px;
+
+
+
+        &:hover{
+
+            .bars{
+            background-color: rgb(216, 51, 51);
+        }
+    }
+
+        
+
+    .bars{
+        background-color: #252B42;
+        height: 3.5px;
+        width: 30px;
+      
+    }
+
+
+    #bar1,#bar2,#bar3{
+        transition: all 1s ease ;
+    }
+
+    // #bar1{
+    //     width: 30px;
+    //         }
+
+    // #bar2{
+        
+    //     width: 20px;
+    //     margin-left: 10px;
+    // }
+
+    // #bar3{
+        
+    //     width: 12px;
+    //     margin-left: 18px;
+    // }
+
+}
+}
+
+
+
+
+
+.icon--change{
+    a{
+  
+     
+      .bars{
+          border-radius: 20px;
+          background-color: black;
+      }
+      #bar1{
+       
+        width: 3;
+        transform: rotate(45deg) translateY(3px) translateX(5px);
+      }
+  
+  
+      #bar2{
+          opacity: 0;
+      }
+      #bar3{
+        transform: rotate(-45deg) translateY(-4px) translateX(6px);
+         width: 3;
+      }
+    }
+  }
+
+

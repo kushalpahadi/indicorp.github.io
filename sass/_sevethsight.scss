@@ -1,0 +1,231 @@
+@import './variables';
+
+.footer{
+    height: 100%;
+    width: 100%;
+  
+
+    &__header{
+        width: 100%;
+        padding: 40px 200px;
+        height: 100%;
+     
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @media (max-width:1500px){
+            padding:10px 42px ;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+
+        @media (max-width:350px){
+            padding: 10px 20px;
+          }
+          
+          
+
+        &__title{
+            text-align: center;
+            h3{
+                font-weight: 700;
+                font-size: 24px;
+                letter-spacing: .1px;
+                color: #252B42;
+                padding-bottom: 10px;
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: .2px;
+                color: #737373;
+            }
+        }
+
+        &__button{
+
+            padding-right: 20px;
+            button{
+            height: 58px;
+            width: 160px;
+            background: #ffa62b;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: 700;
+            text-align: center;
+            cursor: pointer;
+
+
+            &:hover{
+                background: #252B42;
+                transform: translateY(-2px);
+            }
+        }
+    }
+    }
+
+
+    &__body{
+        background: #16697A;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        padding: 50px 200px;
+        color: white;
+
+
+        @media (max-width:1500px){
+            padding:50px 42px ;
+        }
+
+        @media (max-width:950px){
+           gap: 10px;
+           flex-direction: column;
+        }
+
+
+        h3,h5,p,span,h6{
+            cursor: pointer;
+           
+        
+            &:hover{
+                color: #ffa62b;
+            }
+        }
+
+
+        &:hover{
+            background: #08363f;
+        }
+
+
+        &__column{
+            padding: 10px;
+            height: 100%;
+            width: 100%;
+            margin: 0px 10px;
+            h5{
+                font-weight: 700;
+                font-size: 16px;
+                letter-spacing: .1px;
+                padding-bottom: 20px;
+            }
+            p{
+                font-weight: 600;
+                font-size: 14px;
+                letter-spacing: .2px;
+                padding-bottom: 15px;
+            }
+
+            span{
+
+             
+                display: flex;
+                padding-bottom: 15px;
+                align-items: center;
+
+                h6{
+                    color: white;
+                }
+
+                img{
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+
+
+    &__footer{
+        padding: 20px 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @media (max-width:1500px){
+            padding:20px 42px ;
+        }
+
+
+        @media (max-width:950px){
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
+
+
+
+        svg{
+            transition: all .1s ease-in-out;
+
+      &:hover{
+        transform: scale(1.2);
+      }
+            
+          }  
+         }
+
+
+        h6{
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: .2px;
+            color: #737373;
+        }
+
+        ul{
+            display: flex;
+            
+
+            li{
+
+
+                &:nth-child(1){
+                    svg{
+                        &:hover{
+                            fill: #335BF5;
+                        }
+                }
+            }
+                &:nth-child(2){
+                    svg{
+                        &:hover{
+                            fill: #E51F5A;
+                        }
+                }
+            }
+                &:nth-child(3){
+                    svg{
+                        &:hover{
+                            fill: #21A6DF;
+                        }
+                }
+            }
+                &:nth-child(4){
+                    svg{
+                        &:hover{
+                            fill: #E42F08;
+                        }
+                }
+            }
+                list-style: none;
+
+                a{
+                    padding: 10px;
+
+
+                 
+                }
+            }
+        }
+    }
+
+

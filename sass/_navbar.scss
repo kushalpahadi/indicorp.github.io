@@ -1,0 +1,190 @@
+.navbar-container{
+
+     width: 100%;
+
+    height: 104px;
+    padding: 0px 59px;
+    position: fixed;
+background: transparent;
+z-index: 1000;
+
+@media (max-width:1500px){
+    padding:0px 42px ;
+}
+
+
+
+
+@media (max-width:350px){
+  padding: 0px 20px;
+}
+
+
+
+
+svg{
+    cursor: pointer;
+
+    fill: #252B42;
+
+
+
+
+    @media (max-width:450px){
+        fill: #737373;
+    
+        
+    }
+
+
+    
+    &:hover{
+         
+        fill: black;
+        transition: all .5s ease-in-out ;
+}
+
+}
+
+.svg{
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+
+@media (max-width:640px){
+justify-content: space-between;
+display: flex;
+gap: 15px;
+
+}
+
+
+
+
+
+}
+    
+
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+       height: 100%;
+       width: 100%;
+
+
+
+       &__mobile__icons{
+        display: none;
+
+
+
+
+        @media (max-width:450px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        
+            
+        }
+       }
+
+
+
+
+       &__logo{
+        font-weight: 700;
+        font-size: 24px;
+        color: #252B42;
+        letter-spacing: .1px;
+        padding-left: 140px;
+
+
+        @media (max-width:1500px){
+            padding-left: 0px;
+        }
+
+
+        
+       }
+
+       &__lists{
+        display: flex;
+        position: absolute;
+        left: 500px;
+
+
+        @media (max-width:1500px){
+            left: 250px;
+        }
+
+
+        @media (max-width:640px){
+           display: none;
+        }
+
+        li{
+            list-style: none;
+    
+            padding: 5px 5px;
+            padding-right:20px ;
+          
+            
+
+
+            a{
+                text-decoration: none;
+                font-weight: 600;
+            font-size: 14px;
+            letter-spacing: .2px;
+            color:#737373;
+            transition: all .5s ease ;
+
+            &:hover{
+                font-size: 16px;
+                color: blue;
+            }
+
+
+            // &:active{
+            //     color: red;
+            // }
+           
+
+
+            }
+        }
+    }
+    }
+}
+
+
+
+
+//sticky--------------------------------------------------------//
+
+
+.navbar-container.sticky{
+    background: #e2ff69;
+    height:95px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+
+
+    // @media (max-width:640px){
+    //     background: #266b79;
+    // }
+ 
+
+  
+
+
+}
+
+

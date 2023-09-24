@@ -1,0 +1,16 @@
+//bluebtn------to-------orangnebtn---hover
+
+@mixin hover{
+    background: #ffa62b;
+    border: none;
+       border-radius: 37px;
+color: white;
+transform: scale(1.02);
+transition: all .5s ease;
+}
+
+
+@mixin second-screen{
+    padding-left: 100px;
+    padding-right: 100px;
+}
